@@ -23,3 +23,17 @@ function ActualizarMostrarArreglo(){
         lista.appendChild(amigoListado);
     }
 }
+
+function sortearAmigo () {
+    if(amigos.length===0){
+        alert("Por favor, Ingrese nombres para empezar el Sorteo")
+    }
+    else if(amigos.length===1){
+        alert("Donde esta la gracia en tener un participante?, Por favor Agregue mas nombres a lista");
+    }else{
+        document.getElementById("listaAmigos").innerHTML="";
+        let indiceAleatorio=Math.floor(Math.random()*amigos.length);
+        let amigoSecreto=amigos[indiceAleatorio];
+        document.getElementById("resultado").textContent = `El amigo secreto sorteado es : ${amigoSecreto}`;
+    }
+} 
