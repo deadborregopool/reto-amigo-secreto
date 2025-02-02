@@ -6,7 +6,7 @@ function agregarAmigo () {
     let validarAmigo = entrada.value.trim();
 
     if(validarAmigo===""){
-        alert("Por favor, no jodas")
+        alert("Por favor, Ingrese su nombre");
     }else{
         amigos.push(validarAmigo);
         ActualizarMostrarArreglo();
